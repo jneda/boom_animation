@@ -1,0 +1,96 @@
+:root {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  background: rgb(22, 21, 21);
+  color: olivedrab;
+  display: grid;
+  grid-template-columns: 80% auto;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+header {
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+main,
+aside {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+aside {
+  background: rgb(31, 30, 30);
+}
+
+.boom {
+  position: absolute;
+  top: calc(20% - 150px);
+  right: calc(20% - 75px);
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  animation: crash 6s linear;
+}
+
+@keyframes crash {
+  0% {
+    translate: -100vw;
+    background-image: url("ufo.gif");
+  }
+  49% {
+    background-image: url("ufo.gif");
+  }
+  50% {
+    translate: 0;
+    background-image: url("boom.gif");
+  }
+  60% {
+    background-image: url("boom.gif");
+  }
+  100% {
+    background-image: none;
+  }
+}
+
+body {
+  animation: break 6s ease-in-out forwards;
+}
+
+@keyframes break {
+  50% {
+    rotate: 0deg;
+    color: olivedrab;
+  }
+  52% {
+    rotate: 1deg;
+    color: firebrick;
+  }
+  54% {
+    rotate: -1deg;
+  }
+  56% {
+    rotate: 2deg;
+  }
+  58% {
+    rotate: -2deg;
+  }
+  60% {
+    rotate: 4deg;
+    color: olivedrab;
+  }
+  100% {
+    rotate: 4deg;
+  }
+}
