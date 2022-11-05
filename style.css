@@ -59,7 +59,7 @@ aside {
   60% {
     background-image: url("boom.gif");
   }
-  100% {
+  90% {
     background-image: none;
   }
 }
