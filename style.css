@@ -41,12 +41,12 @@ aside {
   width: 150px;
   height: 150px;
   background-size: cover;
-  animation: crash 6s linear;
+  animation: crash 4s linear;
 }
 
 @keyframes crash {
   0% {
-    translate: -100vw;
+    translate: calc(-100vw + 150px);
     background-image: url("ufo.gif");
   }
   49% {
@@ -65,7 +65,7 @@ aside {
 }
 
 body {
-  animation: break 6s ease-in-out forwards;
+  animation: break 4s ease-in-out forwards;
 }
 
 @keyframes break {
